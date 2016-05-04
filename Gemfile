@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gemspec
+group :development, :test do
+  gem 'rake',  '>= 10.4'
+  gem 'rspec', '>= 3.2'
+end
 
-gem 'rake', '>= 10.4'
-gem 'rspec', '>= 3.2'
-gem 'simplecov', :require => false
-gem 'rest-client'
+gemspec
